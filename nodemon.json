@@ -1,0 +1,7 @@
+{
+    "ignore": ["tests/**","dist"],
+
+    "watch": ["src"],
+    "ext": "ts",
+    "exec": "set NODE_NO_WARNINGS=1 && node --loader ts-node/esm src/index.ts"
+  }

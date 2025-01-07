@@ -1,0 +1,27 @@
+# node_modules 폴더는 빌드 시 다시 설치되므로 제외
+node_modules
+npm-debug.log
+yarn-error.log
+
+# 로그 파일 제외
+logs
+*.log
+
+# 환경 설정 파일 제외 (옵션)
+.env
+
+# Git 관련 파일 제외
+.git
+.gitignore
+
+# Docker 관련 파일 제외
+Dockerfile
+docker-compose.yml
+
+# 기타 불필요한 파일 및 폴더 제외
+tmp
+Docs
+*.md
+
+#test
+*/test/**
