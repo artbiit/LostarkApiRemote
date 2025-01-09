@@ -3,22 +3,9 @@ dotenv.config({ path: process.env.ENV_FILE || '.env' });
 
 const requiredEnv = {
   DB: ['HOST', 'PORT', 'USER', 'PASSWORD', 'NAME', 'CONNECTION_LIMIT'],
-  SERVER: ['PORT', 'BIND', 'MAX_CAPACITY', 'NAME'],
+  SERVER: ['PORT', 'BIND'],
   REDIS: ['HOST', 'PORT', 'PASSWORD'],
-  SECURE: ['PEPPER', 'SALT'],
   LOGGER: ['STACK_TRACE'],
-  CLIENT: ['VERSION'],
-  JWT: [
-    'SECRET',
-    'EXPIRES_IN',
-    'ALGORITHM',
-    'ISSUER',
-    'AUDIENCE',
-    'REFRESH_SECRET',
-    'REFRESH_EXPIRES_IN',
-    'ALGORITHM',
-  ],
-  PATH: ['HOST', 'PORT'],
 };
 
 // 플랫한 config 생성
